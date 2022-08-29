@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+<body>
+   <div class="landing">
+    <nav>
+        <a href="#"><img src="./IL2M 004.png" alt="ILIM"></a>
+        <div class="menu" id="menu">
+            <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SECTOR</a></li>
+                <li><a href="#">NEWS ROOM</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()" aria-hidden="true"></i>
+    </nav>
+    <div class="text-box">
+        <h1>The Start of Business</h1>
+        <h4>Providing state of the art efficient and progressive healthcare Services</h4>
+        <p>IL2M International Corporation is a woman led and owned corporation. we focus on the developmental investments <br> for small
+        to mid-sized businesses through acquisition and joint venture partnerships. <br> Find out more about what we do.</p>
+        <a href="#" class="hero-btn">Learn more</a>
+    </div>
+   </div>
+
+   <!------SECTORS-->
+<div class="sector">
+    <div class="col">
+        <h1>
+            Investment Sectors
+        </h1>
+        <p>
+            We envision to become a leading diversified holding company, maximizing shareholders’ value and enabling economic
+            development globally with specific focus on emerging markets of USA, Central America and West Africa.
+        </p>
+        <button><a href="#">Explore</a></button>
+    </div>
+    <div class="col col2">
+        <div class="card card1">
+            <h5>Healthcare</h5>
+            <p><a href="#">Through Joint Partnership with Aamani Healthcare Group, ILIM will advance the health of the communities we
+            serve,
+            through collaboration, innovation, and exceptional care while improving access to care through technological
+            improvement.</a></p>
+        </div>
+        <div class="card card2">
+            <h5>Mining</h5>
+            <p><a href="#">OreOmatic Mining, LLC which is our mining focused subsidiary that ethically extracts useful raw materials
+            form the
+            earth’s crust from the global reserves of Metals and Minerals. OreOmatic Mining, LLC. Focuses on Copper
+            (Mineral),
+            Lithium (Alkali Metal), Titanium (Chemical-Metal Ore).</a></p>
+        </div>
+        <div class="card card3">
+            <h5>Technology</h5>
+            <p><a href="#">While we are still in the research and developmental phase through a joint venture partnership for a
+            caregiver placement
+            application. GeoCare™ is a provider of a mobile app for booking caregivers for home services. The app
+            enables users to
+            book nurses & caregivers for home-based healthcare services in real time.</a></p>
+        </div>
+        <div class="card card4">
+            <h5>Telecommunication</h5>
+            <p><a href="#">Through advances alert software IL2M International's joint venture partnership with AlterSlove is focused on
+            communications over distance wirelessly.</a></p>
+        </div>
+    </div>
+</div>
+
+
+   <!-----JavaScript for Toggle menu---->
+
+   <script>
+    var menu = document.getElementById("menu");
+
+    function showMenu(){
+        menu.style.right="0";
+
+    }
+     function hideMenu(){
+        menu.style.right="-200px";
+        
+    }
+   </script>
+</body>
+</html>
